@@ -1,0 +1,135 @@
+<!doctype html>
+<html class="no-js" lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>城主计划|智享单车</title>
+    <meta name="description" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body>
+    <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+    <header class="plan-bg">
+        <div class="logo"><img src="img/logo.png" alt="logo"></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">智享单车</a></li>
+                <li><a href="user.html">用户故事</a></li>
+                <li><a href="product.html">产品介绍</a></li>
+                <li><a class="active" href="plan.html">城主计划</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="plan-company">
+        <article>
+            <h1>企业介绍</h1>
+            <p>易代步(www.edaibu.net)顾名思义:改变现有的代步工具,让短途出行便捷容易.</p>
+            <p>那一年，尚未凋谢的青春年华里，背着行囊，我们走在逐梦的路上。在某一个雨中的早晨，推开窗户望去，一片雾岚弥漫止遥远的天际，于是低叹一声，回头间，走过的路上，几许心酸，几许坎坷。</p>
+            <p>那一年，尚未凋谢的青春年华里，背着行囊，我们走在逐梦的路上。在某一个雨中的早晨，推开窗户望去，一片雾岚弥漫止遥远的天际，于是低叹一声，回头间，走过的路上，几许心酸，几许坎坷。</p>
+            <p>那一年，尚未凋谢的青春年华里，背着行囊，我们走在逐梦的路上。在某一个雨中的早晨，推开窗户望去，一片雾岚弥漫止遥远的天际，于是低叹一声，回头间，走过的路上，几许心酸，几许坎坷。那一年，尚未凋谢的青春年华里，背着行囊，我们走在逐梦的路上。在某一个雨中的早晨，推开窗户望去，一片雾岚弥漫止遥远的天际，于是低叹一声，回头间，走过的路上，几许心酸，几许坎坷。</p>
+            <p>那一年，尚未凋谢的青春年华里，背着行囊，我们走在逐梦的路上。在某一个雨中的早晨，推开窗户望去，一片雾岚弥漫止遥远的天际，于是低叹一声，回头间，走过的路上，几许心酸，几许坎坷。那一年，尚未凋谢的青春年华里，背着行囊，我们走在逐梦的路上。在某一个雨中的早晨，推开窗户望去，一片雾岚弥漫止遥远的天际，于是低叹一声，回头间，走过的路上，几许心酸，几许坎坷。在某一个雨中的早晨，推开窗户望去，一片雾岚弥漫止遥远的天际，于是低叹一声，回头间，走过的路上，几许心酸，几许坎坷。</p>
+            <p>易代步(www.edaibu.net)在某一个雨中的早晨，推开窗户望去，一片雾岚弥漫止遥远的天际，于是低叹一声，回头间，走过的路上，几许心酸，几许坎坷。</p>
+            
+        </article>
+    </section>
+    <section class="plan-vip">
+        <article>
+            <h1>核心团队</h1>
+            <br>
+            <div class="vip">
+                <img src="img/plan/vip1.png">
+                <p class="name">曹康</p>
+                <p class="job">智享单车品牌创始人&CEO</p>
+                <p>中山大学岭南学院EMBA,曾任职某大型国有商业银行。专注物业投资十数载，形成了一套独特的投资理念和投资方法。</p>
+                <p>极其注重大势分析和数据分析，投资眼光独到第一批收购的物业升值超过6倍，至今投资案例超过50宗，升值回报均远超市场，无一失手。2012年创办了全国首家个人投资24小时免费开放公益自助图书馆免费免费&nbsp;&nbsp; .&nbsp;.&nbsp;.</p>
+            </div>
+            <div class="vip">
+                <img src="img/plan/vip2.png">
+                <p class="name">李玉虎</p>
+                <p class="job">联合创始人&副总经理</p>
+                <p>中山大学岭南学院EMBA,曾任职某大型国有商业银行。专注物业投资十数载，形成了一套独特的投资理念和投资方法。</p>
+                <p>极其注重大势分析和数据分析，投资眼光独到第一批收购的物业升值超过6倍，至今投资案例超过50宗，升值回报均远超市场，无一失手。</p>
+            </div>
+            <div class="vip">
+                <img src="img/plan/vip3.png">
+                <p class="name">蔡茂林</p>
+                <p class="job">首席顾问</p>
+                <p>中山大学岭南学院EMBA,曾任职某大型国有商业银行。专注物业投资十数载，形成了一套独特的投资理念和投资方法。</p>
+                <p>极其注重大势分析和数据分析，投资眼光独到第一批收购的物业升值超过6倍，至今投资案例超过50宗，升值回报均远超市场，无一失手</p>
+            </div>
+            <div class="vip">
+                <img src="img/plan/vip4.png">
+                <p class="name">黄一兵</p>
+                <p class="job">CTO</p>
+                <p>中山大学岭南学院EMBA,曾任职某大型国有商业银行。专注物业投资十数载，形成了一套独特的投资理念和投资方法。</p>
+                <p>极其注重大势分析和数据分析，投资眼光独到第一批收购的物业升值超过6倍，至今投资案例超过50宗，升值回报均远超市场，无一失手。2012年创办了全国</p>
+            </div>
+            <div class="vip">
+                <img src="img/plan/vip5.png">
+                <p class="name">杨海峰</p>
+                <p class="job">COO</p>
+                <p>中山大学岭南学院EMBA,曾任职某大型国有商业银行。专注物业投资十数载，形成了一套独特的投资理念和投资方法。</p>
+                <p>极其注重大势分析和数据分析，投资眼光独到第一批收购的物业升值超过6倍，至今投资案例超过50宗，升值回报均远超市场，无一失手。2012年创办了全</p>
+            </div>
+            <div class="vip">
+                <img src="img/plan/vip6.png">
+                <p class="name">潘建国</p>
+                <p class="job">人力资源总监</p>
+                <p>中山大学岭南学院EMBA,曾任职某大型国有商业银行。专注物业投资十数载，形成了一套独特的投资理念和投资方法。</p>
+                <p>极其注重大势分析和数据分析，投资眼光独到第一批收购的物业升值超过6倍，至今投资案例超过50宗，升值回报均远超市场，无一失手。</p>
+            </div>
+        </article>
+    </section>
+    <section class="plan-partner">
+        <article>
+            <h1>未来城主 智享伙伴</h1>
+            <p>易代步(www.edaibu.net)顾名思义:改变现有的代步工具,让短途出行便捷容易.</p>
+            <br>
+            <p>那一年，尚未凋谢的青春年华里，背着行囊，我们走在逐梦的路上。在某一个雨中的早晨，推开窗户望去，一片雾岚弥漫止遥远的天际，于是低叹一声，回头间，走过的路上，几许心酸</p>
+            <p>那一年，尚未凋谢的青春年华里，背着行囊，我们走在逐梦的路上。在某一个雨中的早晨，推开窗户望去，一片雾岚弥漫止遥远的天际，于是低叹一声，回头个雨中的早晨，推开窗户望去，一片雾岚弥漫止遥远的天际，于是低叹一声，回头推开窗户望去，</p>
+            <p>那一年年，尚未凋谢的青春年华里，背着行囊，我们走在逐梦的路上。在某一个雨中的早晨，推开窗户望去，一片雾岚弥漫止遥远的天际，于是低叹一声，回头间，走过的路上，几许心酸，几许坎坷，尚未凋谢的青春年华里，背着行囊，我们走在逐梦的路上。在某一个雨中的早晨，推开窗户望去，一片雾岚弥漫止遥远的天际，于是低叹一声，回头间，走过的路上，几许心酸，几许坎坷。</p>
+            <div class="pic">
+                <div class="block">
+                    <img src="img/plan/ad.png" alt="广告收益">
+                    <p>广告收益</p>
+                </div>
+                <div  class="block">
+                    <img src="img/plan/plat.png" alt="平台服务">
+                    <p>平台服务</p>
+                </div>
+                <div  class="block">
+                    <img src="img/plan/busi.png" alt="运营服务标准化">
+                    <p>运营服务标准化</p>
+                </div>
+            </div>
+            <p class="tip">已开通城市:</p>
+            <span class="city">北京</span>
+            <span class="city">南京</span>
+            <span class="city">东莞</span>
+            <span class="city">佛山</span>
+            <span class="add-city"><img src="img/plan/add.png" >更多城市期待您的加入</span>
+        </article>
+    </section>
+    <footer>
+        <div>
+            <div class="left">
+                <h1>北京骑骑智享科技发展有限公司</h1>
+                <p class="addr">北京市海淀区西二旗大街39号A座3层</p>
+                <p class="phone">400-009-1717</p>
+                <p class="email">edaibu@edaibu.net</p>
+                <p class="copy">Copyright &copy; 2016-2017 edaibu.com. All Rights Reserved.</p>
+            </div>
+            <div class="right">
+                <img src="img/Qrcode.jpg" alt="二维码">
+                <p>智享单车公众号</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

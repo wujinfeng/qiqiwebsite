@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0, minimum-scale = 1.0, maximum-scale = 1.0, user-scalable = no"/>
+    <title>使用说明</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/jquery.min.js" type="text/javascript"></script>
+    <style>
+        @media screen and (min-width: 360px){
+            div.img{
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+<style>
+    div.container{
+        width: 100%;
+        padding-right: 25px;
+        padding-left: 30px;
+        padding-bottom: 50px;
+    }
+    h2{
+        clear: both;
+        text-align: center;
+        color: #101010;
+        margin: 30px auto 16px;
+        font-size: 24px;
+    }
+    .box1,.box2,.box3,.box4{
+        padding-bottom: 25px;
+        float: left;
+    }
+    .div_{
+        clear: both;
+        font-size: 12px;
+        color: #666666;
+    }
+  /*  div.text{
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+    div.img{
+        padding-right: 5px;
+        padding-left: 5px;
+    }*/
+    .img{
+        display: inline-block;
+        width: 50%;
+    }
+    .box1>div{
+        float: left;
+    }
+    .box2>div{
+        float: left;
+    }
+    .text{
+        padding-top: 5px;
+        padding-right: 15px;
+        display: inline-block;
+        width: 49%;
+    }
+    .text1{
+        padding-top: 5px;
+        padding-left: 10px;
+        display: inline-block;
+        width: 49%;
+    }
+    .div__{
+        margin-bottom: 10px;
+    }
+    .div___{
+        margin-top: 7px;
+    }
+    .img1,.img2{
+
+        width: 43%;
+        display: inline-block;
+    }
+    .img1{
+        margin-right: 15px;
+    }
+    .img2{
+        margin-left: 15px;
+    }
+    .img img{
+        width: 100%;
+    }
+    .text span {
+        color: #ff0000;
+    }
+    .box3{
+        text-align: center;
+    }
+    ._3{
+        clear: both;
+    }
+    .img_text{
+        margin-top:12px ;
+        text-align: center;
+        color: #666666;
+    }
+    .box4{
+        width: 100%;
+    }
+    .box4 div{
+        color: #666666;
+        text-align: center;
+    }
+</style>
+<div class="container">
+    <div class="div_ _1">
+        <h2>怎么租车</h2>
+        <div class="box box1">
+            <div class="text">
+                <div class="div_ div__"> 1、点击地图上的图标（右图中<span>①</span>）。点击图标后可以进行车辆预约（免费）和开锁用车。</div>
+                <div class="div_">2、直接扫码（右图中<span>②</span>）。二维码在车尾处，扫码后可以直接开锁用车。</div>
+            </div>
+            <div class="img"><img src="./imgs/1.png" class="IMG1"></div>
+        </div>
+    </div>
+    <div class="div_ _2">
+        <h2>怎么还车</h2>
+        <div class="box box2">
+            <div class="img"><img src="./imgs/2.png" class="IMG2"></div>
+            <div class="text1">
+                <div class="div_ div__">还车时只需要在app上点击“还车结算”就行了(如左图)。</div>
+                <div class="div_">距离车辆十米以内可以开启/关闭车辆锁（需要开启蓝牙），超出范围时点击开/关锁时会提示：“蓝牙未连接，请靠近车辆”。</div>
+            </div>
+            <div class="div_ div___">点击“立即寻车”时车辆上的指示灯会闪，指导你找到指定的车。如果需要暂时锁车，点击上图中的“暂时锁车”就行了。</div>
+        </div>
+    </div>
+    <div class="div_ _3">
+        <h2>车辆分类</h2>
+        <div class="box box3">
+            <div class="img img1">
+                <img src="./imgs/3.png" >
+                <div class="img_text">定制车</div>
+            </div>
+            <div class="img img2">
+                <img src="./imgs/4.png" >
+                <div class="img_text">共享车</div>
+            </div>
+        </div>
+    </div>
+    <div class="div_ _4">
+        <h2>开/关锁失败怎么办</h2>
+        <div class="box box4">
+            <div>看下是否是因为车轮辐条压到了锁具，</div>
+            <div>活动下后车轮再开/关一次锁就行了；若还是不行</div>
+            <div>来大招了！找客服（010-62963350）！！！</div>
+
+        </div>
+    </div>
+</div>
+<script>
+    var h=(window.innerHeight > 0) ? window.innerHeight : screen.height;
+    var w=(window.innerWidth > 0) ? window.innerWidth : screen.width;
+    if( w==320 ){
+        $(".IMG1").attr("src","./imgs/1_1.png");
+        $(".IMG2").attr("src","./imgs/2_1.png");
+    }
+
+</script>
+</body>
+</html>

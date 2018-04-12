@@ -1,0 +1,1156 @@
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+    font-family: 微软雅黑, Helvetica, Arial, Verdana, sans-serif;
+}
+
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.alignleft{
+    text-align:left;
+}
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    padding: 0 20px;
+}
+
+
+/* 头部 */
+
+header {
+    width: 100%;
+}
+
+.index-bg {
+    height: 960px;
+    background: url(../img/index/top.png) center no-repeat;
+}
+
+.user-bg {
+    height: 560px;
+    background: url(../img/user/top.jpg) center no-repeat;
+}
+
+.product-bg {
+    height: 560px;
+    background: url(../img/product/top.png) center bottom no-repeat;
+}
+
+.plan-bg {
+    height: 560px;
+    background: url(../img/plan/top.jpg) center no-repeat;
+}
+
+.newlist-bg {
+    height: 560px;
+    background: url(../img/newslist/top.jpg) center no-repeat;
+}
+
+.new-bg {
+    height: 100px;
+}
+
+header .logo {
+    position: absolute;
+    top: -4px;
+    left: 74px;
+    z-index: 1;
+}
+
+header .logo img {
+    width: 100%;
+}
+
+header nav {
+    width: 100%;
+    text-align: right;
+}
+
+header nav ul {
+    padding-right: 50px;
+}
+
+header nav ul li {
+    display: inline-block;
+    vertical-align: middle;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    padding: 0 20px;
+}
+
+header nav ul li a {
+    display: block;
+    color: #333;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+header nav ul li a.active {
+    color: #13ae67;
+}
+
+header nav ul li a:hover {
+    color: #13ae67;
+}
+
+@media screen and ( max-width:768px) {
+    header .logo {
+        position: absolute;
+        top: -4px;
+        left: 10px;
+        width: 50px;
+        z-index: 1;
+    }
+    header nav ul {
+        padding-right: 5px;
+    }
+    header nav ul li {
+        height: 55px;
+        line-height: 55px;
+        padding: 0 2px;
+    }
+    header nav ul li a {
+        font-size: 17px;
+    }
+}
+
+@media screen and ( max-width: 768px) {
+    header nav {
+        background-color: rgba(255, 255, 255, 0.6);       
+    }   
+    .index-bg {
+        height: 435px;
+        background: url(../img/index/top_small.jpg) center no-repeat;
+    }
+    .user-bg {
+        height: 299px;
+        background: url(../img/user/top_small.jpg) center no-repeat;
+    }
+    .product-bg {
+        height: 299px;
+        background: url(../img/product/top_small.jpg) center bottom no-repeat;
+    }
+    .plan-bg {
+        height: 299px;
+        background: url(../img/plan/top_small.jpg) center no-repeat;
+    }
+    .newlist-bg {
+        height: 299px;
+        background: url(../img/newslist/top_small.jpg) center no-repeat;
+    }
+    .new-bg {
+        height: 55px;
+    }
+    .index-bg , .user-bg  ,.product-bg , .plan-bg  ,.newlist-bg{
+        background-size: cover;
+    }
+}
+
+@media screen and ( max-width:320px) {
+    header nav ul li a {
+        font-size: 14px;
+    }
+}
+
+
+/* 头部结束 */
+
+
+/* 尾部 */
+
+footer {
+    padding: 0 20px;
+    height: 300px;
+    background-color: #2e2e2e;
+}
+
+footer>div {
+    max-width: 980px;
+    margin: 0 auto;
+    padding-top: 75px;
+}
+
+footer h1 {
+    margin-top: 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #c6c6c6;
+}
+
+footer p {
+    font-size: 16px;
+    color: #999;
+    line-height: 30px;
+}
+
+footer .addr,
+footer .phone,
+footer .email {
+    text-indent: 30px;
+}
+
+footer .addr {
+    background: url(../img/addr.png) left center no-repeat;
+}
+
+footer .phone {
+    background: url(../img/telephone.png) left center no-repeat;
+}
+
+footer .email {
+    background: url(../img/email.png) left center no-repeat;
+}
+
+@media screen and ( max-width:768px) {
+    footer {
+        height: 220px;
+    }
+    footer>div {
+        padding-top: 30px;
+    }
+}
+
+@media screen and ( max-width:640px) {
+    footer {
+        height: 220px;
+    }
+    footer>div {
+        padding-top: 25px;
+    }
+    footer h1 {
+        font-size: 14px;
+    }
+    footer p {
+        font-size: 10px;
+    }
+    footer .addr,
+    footer .phone,
+    footer .email {
+        text-indent: 25px;
+    }
+}
+
+@media screen and ( max-width:320px) {
+    footer {
+        padding: 0 5px;
+    }
+
+}
+/* 尾部结束 */
+/* 右下角悬浮层 */
+.contact{
+    position: fixed;
+    right:0px;
+    bottom:20px;
+    background-color: transparent;
+}
+.contact .phone{
+    margin-bottom: 2px;
+}
+.contact .phone, .contact .ercode{
+    background-color: rgba(19, 174, 103, 0.82);
+    width:140px;
+    height:130px;
+    padding:15px 0;
+    text-align: center;
+    font-weight: bold;
+    color:#ddd;
+}
+.contact .phone img, .contact .ercode img{
+    width: 108px;
+    height: 108px;
+}
+@media screen and ( max-width:768px) {
+   .contact{
+        display: none;
+   }
+}
+/* 右下角悬浮层end */
+/* title */
+
+article > h1 {
+    display: inline-block;
+    font-size: 26px;
+    margin-top: 70px;
+    margin-bottom: 35px;
+    padding-bottom: 14px;
+    border-bottom: 2px solid #13ae67;
+    color: #262626;
+    font-weight: normal;
+}
+
+article {
+    max-width: 980px;
+    margin: 0 auto;
+    text-align: center;
+}
+@media screen and ( max-width: 768px) {
+    article > h1 {
+        font-size: 22px;
+        margin-top: 40px;
+    }
+}
+@media screen and ( max-width:640px) {
+    article > h1 {
+        font-size: 20px;
+        margin-top: 30px;
+    }
+}
+
+
+/* 首页中间内容 */
+
+/* .usage {
+    min-height: 620px;
+} */
+
+.usage > article > p {
+    font-size: 22px;
+    color: #666;
+    margin-bottom: 110px;
+}
+
+.usage .flow {
+        margin-bottom: 140px;
+    }
+.usage .pic,
+.usage .line {
+    width: 13%;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+    color: #666;
+    overflow: hidden;
+}
+.usage .line {
+    margin-top:-15px;
+}
+.usage .pic img,
+.usage .line img {
+    width: 100%;
+}
+
+.big-news {   
+    background-color: #eee;
+}
+
+.big-news .event {
+    position: relative;
+    display: inline-block;
+    width: 49%;
+    margin-bottom: 2%;
+    vertical-align: top;
+    line-height: 1.5;
+}
+
+.event .tip {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: left;
+    color: #fff;
+    background-color: rgba(19, 174, 103, 0.68);
+}
+
+.event .title {
+    font-size: 16px;
+    padding-left: 5px;
+    word-break: keep-all;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.event .desc {
+    font-size: 12px;
+    padding-left: 5px;
+    word-break: keep-all;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.big-news .left {
+    margin-right: 2%;
+}
+
+.big-news .event img {
+    width: 100%;
+}
+
+.big-news .center-img {
+    margin: 20px 0 20px 0;
+}
+@media screen and ( max-width:768px) {
+        .usage > article > p {
+            font-size: 16px;
+            margin-bottom: 40px;
+        }
+        .usage .flow {
+            margin-bottom: 40px;
+        }
+}
+@media screen and ( max-width:640px) {
+    .usage > article > p {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+    .usage .flow {
+        margin-bottom: 30px;
+    }
+    .usage .pic,
+    .usage .line {
+        width: 11%;
+    }    
+    .big-news .event {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;  
+    }
+    .big-news{
+        min-height: auto;
+    }
+}
+
+@media screen and ( max-width:320px) {
+    .usage > article > p {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+    .usage .flow {
+        margin-bottom: 30px;
+    }
+}
+
+
+/* 首页中间内容结束 */
+
+
+/* 用户故事 */
+
+.story > article > p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+}
+.story .storypic6{
+    width:50%;
+}
+
+.story .date {
+    display: inline-block;
+    margin: 10px;
+    position: relative;
+    width: 221px;
+    height: 322px;
+    overflow: hidden;
+    background-color: #e9e9e9;
+}
+
+.story > article .date img {
+    width: 100%;
+    height: 100%;
+}
+
+.story .pic {
+    text-align: center;
+}
+
+.story .date .day,
+.story .date .month,
+.story .date .text {
+    position: absolute;
+    color: #ededed;
+}
+
+.story .date .day {
+    top: 8px;
+    left: 15px;
+    font-size: 56px;
+}
+
+.story .date .month {
+    top: 80px;
+    left: 15px;
+    font-size: 20px;
+}
+
+.story .date .text {
+    bottom: 8px;
+    right: 10px;
+    font-size: 14px;
+}
+
+.story .qrcode {
+    text-align: center;
+}
+
+.story .qrcode img.qrcode {
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    width: 94px;
+    height: 94px;
+}
+
+.story .date.qrcode .your {
+    position: absolute;
+    top: 160px;
+    width: 100%;
+}
+
+.story .date.qrcode .email {
+    position: absolute;
+    top: 190px;
+    width: 100%;
+    font-size: 12px;
+}
+
+@media screen and (max-width:768px) {
+ .story > article > p {
+        font-size: 15px;
+    }
+    .story .date {       
+        margin: 10px;
+        max-width: 29%;
+        height: 30%;
+    }
+   .story > article .date img {
+   	    height: 270px;
+   }
+
+}
+@media screen and (max-width: 640px) {
+    .story > article > p {
+        font-size: 15px;
+    }
+    .story .date {       
+        margin: 10px;
+        max-width: 39%;
+    }
+    .story > article .date img {
+        height: 190px;
+    }
+}
+@media screen and (max-width: 320px) {
+ .story .date {       
+        margin: 5px;
+        max-width: 44%;
+    }
+	.story > article .date img {
+        height: 160px;
+	}
+}
+/* 用户故事结束 */
+/* 产品介绍 */
+.product {
+    min-height: 680px;
+}
+
+.product > article > p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 60px;
+    text-align:left;
+}
+
+.product .dev {
+    vertical-align: middle;
+    display: inline-block;
+    width:24%;
+    height: 304px;
+    border: 1px solid #eee;
+    margin-bottom: 10px;
+    overflow:hidden;
+}
+.product .dev img{
+    width:100%;
+}
+
+.product .name {
+    margin: 10px 0 2px 0;
+    color: #13ae67;
+    font-size: 18px;
+}
+
+.product .text {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.8;
+    padding: 10px;
+}
+
+.online-city {
+    padding-bottom: 30px;
+    background-color: #eee;
+}
+
+.online-city > article > p {
+    width:  24%;
+    max-height: 160px;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.online-city > article > p img {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .product > article > p {
+        margin-bottom:30px;
+        font-size:16px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .product .dev{
+        width:48%;
+    }
+    .product > article > p {
+        margin-bottom:30px;
+        font-size:16px;
+    }
+    .online-city > article > p {
+        width: 50%;
+    }
+
+}
+
+/* 产品介绍结束 */
+/* 企业介绍 */
+.plan-company {
+    line-height: 1.8;
+}
+
+.plan-company article p {
+    margin-bottom: 36px;
+    text-align: left;
+    color: #666;
+    font-size: 14px;
+}
+
+.plan-vip {
+    background-color: #eee;
+}
+
+.plan-vip .vip {
+    width: 268px;
+    height: 370px;
+    padding: 10px;
+    display: inline-block;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-right: 35px;
+    vertical-align: top;
+}
+
+.plan-vip .vip:hover,
+.plan-vip .vip.active {
+    background-color: #13ae67;
+    box-shadow: 0 0 5px #666;
+    border-radius: 5px;
+    color: #fff!important;
+}
+
+.plan-vip .vip:hover p,
+.plan-vip .vip.active p {
+    color: #fff!important;
+}
+
+.plan-vip .vip p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.plan-vip .vip .name {
+    font-size: 24px;
+    color: #333;
+}
+
+.plan-vip .vip .job {
+    font-size: 16px;
+    color: #13ae67;
+}
+
+
+.plan-partner p {
+    color: #818080;
+    font-size: 14px;
+    line-height: 28px;
+    text-align: left;
+}
+
+.plan-partner .pic {
+    margin-top: 70px;
+}
+
+.plan-partner .pic .block {
+    display: inline-block;
+    width: 32%;
+    vertical-align: top;
+}
+
+.plan-partner .pic p {
+    font-size: 20px;
+    color: #666;
+    text-align: center;
+}
+
+.plan-partner .pic img {
+    max-width: 157px;
+    max-height: 157px;
+    width:60%;
+}
+
+.plan-partner .tip {
+    margin-top: 110px;
+    font-size: 16px;
+    color: #13ae67;
+    margin-bottom: 50px;
+}
+
+.plan-partner .city {
+    display: inline-block;
+    border: 1px solid #13ae67;
+    padding: 5px 25px;
+    color: #13ae67;
+    border-radius: 5px;
+    margin-right: 60px;
+    vertical-align: middle;
+    margin-bottom: 30px;
+}
+
+.plan-partner .add-city {
+    display: inline-block;
+    vertical-align: middle;
+    color: #bbb;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .plan-vip .vip{
+            border-bottom: 1px solid #ddd;
+        }
+}
+@media screen and (max-width: 640px) {    
+    .plan-partner .pic p {
+        font-size: 12px;
+    }
+}
+
+/* 企业介绍结束 */
+/* 新闻列表*/
+
+.newslist,
+.news {
+    background-color: #eee;
+    padding: 20px 0;
+}
+
+.newslist .nav,
+.news .nav {
+    text-align: left;
+    margin: 0px 0 30px 0;
+    border-left: 2px solid #13ae67;
+    padding-left: 20px;
+}
+
+.newslist .nav i,
+.news .nav i {
+    font-style: normal;
+    color: #13ae67;
+}
+
+.newslist ul {
+    max-width: 980px;
+}
+
+.newslist li {
+    margin-bottom: 50px;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.newslist .left {
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%;
+}
+
+.newslist .left img {
+    width: 100%;
+}
+
+.newslist .right {
+    vertical-align: middle;
+    text-align: left;
+    padding-left: 2%;
+    display: inline-block;
+    width: 46%;
+}
+
+.newslist .right a {
+    text-decoration: none;
+    color: #444;
+}
+
+.newslist .right h1 {
+    font-size: 16px;
+}
+
+.newslist .right .date {
+    color: #13ae67;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.newslist .right .text {
+    color: #666;
+    line-height: 1.8;
+    font-size: 14px;
+}
+@media screen and (max-width: 640px) {
+    .newslist .right h1 {
+        font-size: 12px;
+        margin:0;
+    }
+    .newslist .right .date {
+        color: #13ae67;
+        font-size: 10px;
+        margin-bottom: 2px;
+    }
+    .newslist .right .text {
+        color: #666;
+        line-height: 1.2;
+        font-size: 10px;
+    }
+}
+
+/* 新闻列表结束*/
+/* 新闻*/
+.news .article {
+    padding: 20px;
+    background-color: #fff;    
+}
+
+.news .article h1 {
+    font-size: 26px;
+    color: #262626;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.news .article .date {
+    color: #13ae67;
+    font-size: 14px;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    border-bottom: 1px dashed #ddd;
+    text-indent: 0;
+    text-align: center;
+}
+
+.news .article p {
+    text-align: left;
+    text-indent: 2em;
+    color: #666;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.news .article img {
+    max-width: 90%;
+}
+@media screen and (max-width: 640px) {
+    .news .article h1 {
+        font-size: 20px;       
+    }
+}
+
+/* 新闻结束*/
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap;
+    /* 1 */
+}
+
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    p:first-letter,
+    div:first-letter,
+    blockquote:first-letter,
+    li:first-letter,
+    p:first-line,
+    div:first-line,
+    blockquote:first-line,
+    li:first-line {
+        background: transparent !important;
+        color: #000 !important;
+        /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+    thead {
+        display: table-header-group;
+    }
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

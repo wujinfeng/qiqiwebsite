@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0, minimum-scale = 1.0, maximum-scale = 1.0, user-scalable = no"/>
+    <title>信用值</title>
+    <script type="text/javascript" src="./JS/jquery.min.js"></script>
+</head>
+<style>
+    html,body{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        font-family: 微软雅黑 ;
+    }
+    .head{
+        text-align: center;
+        background-color: #effdfb;
+        box-sizing: border-box;
+        padding: 53px 0 25px;
+    }
+    .head span{
+        display: block;
+    }
+    #num{
+        color: #00B83F;
+        font-size: 65px;
+    }
+    #text{
+        color: #00B83F;
+        font-size: 32px;
+    }
+    h4{
+        font-size: 16px;
+        margin: 10px auto;
+    }
+    b{
+        vertical-align: text-bottom;
+        display: inline-block;
+        width: 5px;
+        height: 17px;
+        line-height: 18px;
+        margin-right: 7px;
+        margin-bottom: 2px; 
+    }
+    .H1 b{
+        background-color: #3ecccb;
+    }
+    .H2 b{
+        background-color: #2acd5b;
+    }
+    .H3 b{
+        background-color: #ef654b;
+    }
+    .H1{
+        margin-top: 25px;
+        color: #3ecccb;
+    }
+    .H2{
+        margin-top: 20px;
+       color: #2acd5b
+    }
+    .H3{
+        margin-top: 20px;
+        color: #ef654b;
+    }
+    .div{
+        padding: 0 15px;
+        font-size: 14px;
+        color: #333333;
+    }
+</style>
+<script type="text/javascript">
+    	$(function(){
+      var str=location.href;
+    	if(str!=null){
+    			str=str.split("?")[1];
+    			$("#num").text("");
+    			$("#num").text(str);
+    		}
+    	}
+    );
+    </script>
+<body>
+<div class="head">
+    <span id="num">100</span>
+    <span id="text">信用值</span>
+</div>
+<h4 class="H1"><b></b>信用值</h4>
+<div class="div">
+    <div>新用户注册后，初始信用值为100。</div>
+    <div>用户发生违规或违章行为，按一定分数扣减其信用值。</div>
+    <div>用户信用值低于60，将被拉黑不能租车。</div>
+</div>
+<h4 class="H2"><b></b>加分项目</h4>
+<div class="div">
+    <div>1、用户连续5次正常租还车，未发现异常或者违规行为则获得1个信用值。</div>
+    <div>2、用户扫码报修车辆并被确认，获得2个信用值，如不属实，扣2个信用值。</div>
+</div>
+<h4 class="H3"><b></b>减分项目</h4>
+<div class="div">
+    <div>1、用户一天内累计发生3次订单取消，扣除1个信用值。</div>
+    <div>2、租车结束超过24小时仍未付款，扣2个信用值。</div>
+    <div>3、将车辆停放在自己家中、封闭小区或单位中，或者用非常手段导致他人无法继续租用的，扣10个信用值。</div>
+</div>
+<script>
+    $(function () {
+        var B=ismobile();
+        if( B=="1" ){
+            var Credit= window.injs.getCredit();//android
+            $("#num").text(Credit);
+        }else {
+            var Credit_ios = window.location.href.split("?creditValue=")[1];
+            $("#num").text(Credit_ios);
+        }
+
+        //IOS用于创建桥接对象的函数
+        function callOC2(func){
+            var iframe = document.createElement("iframe");
+            var url= "myapp:" + "&func=" + func;
+            iframe.src = url;
+            iframe.style.display = 'none';
+            document.body.appendChild(iframe);
+            iframe.parentNode.removeChild(iFrame);
+            iframe = null;
+        }
+
+
+        //判断是android还ios
+        function ismobile(test){
+            var u = navigator.userAgent, app = navigator.appVersion;
+            if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))){
+                if(window.location.href.indexOf("?mobile")<0){
+                    try{
+                        if(/iPhone|mac|iPod|iPad/i.test(navigator.userAgent)){
+                            return '0';
+                        }else{
+                            return '1';
+                        }
+                    }catch(e){}
+                }
+            }else if( u.indexOf('iPad') > -1){
+                return '0';
+            }else{
+                return '1';
+            }
+        }
+    });
+</script>
+</body>
+</html>

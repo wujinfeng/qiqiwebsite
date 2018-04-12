@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0, minimum-scale = 1.0, maximum-scale = 1.0, user-scalable = no"/>
+    <meta name="format-detection" content="telephone=yes">
+    <title>关于我们</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <style>
+        html,body{
+            margin: 0;
+            height: 100%;
+            padding: 0;
+            background-color: #F5F5F5;
+        }
+        .row{
+            margin: 0;
+            text-align: center;
+        }
+        .row_1{
+            margin-top: 22%;
+        }
+        .row_2{
+            text-align: center;
+            padding: 0;
+            width: 100%;
+            position: absolute;
+            bottom: 15px;
+            font-size: 12px;
+        }
+        .row_2 div{
+            margin-top: 12px;
+        }
+        .div1 a{
+            color: #13AE67;
+            font-size: 13px;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        .img{
+            width: 39%;
+        }
+        .L{
+            font-size: 22px;
+            color: #999999;
+        }
+    </style>
+    <style>
+        @media screen and (min-width : 320px) {
+            img.img{
+                width: 23%;
+            }
+            div.L{
+                font-size: 12px;
+                transform: scale(0.8);
+                margin-top: 11px;
+            }
+            div.row_2 div{
+                margin-top: 8px;
+            }
+        }
+        @media screen and (min-width : 375px) {
+            img.img{
+                width: 25%;
+            }
+            div.L{
+                font-size: 12px;
+                transform: scale(1);
+                margin-top: 16px;
+            }
+            div.row_2 div{
+                margin-top: 12px;
+            }
+        }
+        @media screen and (min-width : 411px) {
+            div.L{
+                font-size: 22px;
+                margin-top: 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row row_1">
+        <img src="./imgs/logo.png" class="img">
+        <div class="L">V1.92</div>
+    </div>
+</div>
+<div class="container row_2">
+    <div class="div1"><a href="agreement.html">《服务协议》</a></div>
+    <div>北京骑骑智享科技发展有限公司 版权所有</div>
+</div>
+</body>
+</html>
